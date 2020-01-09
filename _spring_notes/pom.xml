@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.conal.ryan</groupId>
+    <artifactId>spring-notes</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <spring.version>4.3.10.RELEASE</spring.version>
+        <spring-boot.version>1.5.6.RELEASE</spring-boot.version>
+        <json-path.version>2.4.0</json-path.version>
+        <maven-compiler.version>3.2</maven-compiler.version>
+    </properties>
+
+    <dependencies>
+        <!-- Spring -->
+        <!-- spring-context is minimum you need
+            spring-aop
+            spring-beans
+            spring-context
+            spring-core
+            spring-expression
+        -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+        <!-- Spring Boot -->
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>-->
+
+        <!-- Testing -->
+        <!--<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring-boot.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.jayway.jsonpath</groupId>
+            <artifactId>json-path</artifactId>
+            <version>${json-path.version}</version>
+            <scope>test</scope>
+        </dependency>-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- When <addResources> is enabled, any src/main/resources folder will be added to the application 
+            classpath when you run the application and any duplicate found in target/classes will be removed. 
+            
+            Allows hot refreshing of resources example HTML, CSS or JavaScript files changes applied immediately 
+            without recompiling your application. 
+            
+            It is also a helpful way of allowing your front end developers to work without needing to download and install a Java IDE.
+
+            Note side effect of using this feature is that filtering of resources at build time will not work.
+            https://maven.apache.org/plugins/maven-resources-plugin/examples/filter.html
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+            -->
+            <!--<plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <configuration>
+                    <addResources>true</addResources>
+                </configuration>
+            </plugin>-->
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler.version}</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- <repositories>
+        <repository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-releases</id>
+            <url>https://repo.spring.io/libs-release</url>
+        </pluginRepository>
+    </pluginRepositories> -->
+</project>

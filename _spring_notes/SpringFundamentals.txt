@@ -1,0 +1,77 @@
+Spring Fundamentals
+http://www.pluralsight.com/courses/spring-fundamentals
+
+Don't use new keyword.  Anytime you write new, try to use Spring injection instead.
+
+Applicaiton => ServiceImpl => RepositoryImpl or DaoImpl
+
+Service Interface should not know what type of repository it's using.
+
+Jars Required
+	spring-beans
+	spring-context
+	spring-core // automatically adds commons-logging dependency.  Can add (1)SLF4J or (2) Log4J
+	spring-expressions
+	commons-logging
+
+-------------------------------------------------------------------------------
+Spring XML Configuration
+
+XML was first method of wiring up Spring.  Still one of most popular methods.
+
+Application Context
+	applicationContext.xml
+
+beans
+	Must have id or name
+	Classes
+	Replaces "new" keyword
+	Define class, use interface
+	Bean in applicationContext.xml will point to concrete impl class
+constructor args
+	Used to reference properties of constructor
+properties
+	Getters and setters of the POJO
+references
+	Refer to another bean we have defined
+values
+	Basic primitive values that we're setting in the POJO
+
+// applicationContext.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="myBean"
+		class="com.conal.ryan.myClass">
+	</bean>
+
+	<bean name="customerService" class="com.pluralsight.CustomerServiceImpl">
+		<property name="customerRepository" ref="myBean"></property>
+	</bean>
+
+    <bean id="message"
+    	class="org.springbyexample.di.app.Message">
+        <property name="message" value="Spring is fun." />
+    </bean>
+
+</beans>
+
+// in applicationConfig
+ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+
+MyBean myBean = applicaitonContext.getBean("MyBean", MyBean.class);
+
+setter injection is more common
+
+	<bean name="myBean" class="com.conal.ryan.myClass"></bean>
+
+	<bean name="myBean" class="com.conal.ryan.myClass">
+	    <property name="myProperty" value="Spring is fun." />
+	</bean>
+
+	<bean name="myBean" class="com.conal.ryan.myClass">
+		<constructor-arg index="0" ref="myOtherBean"></constructor-arg>
+	</bean>

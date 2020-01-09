@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- ==========================================================================================
+         To load spring container in main method
+
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("ctx-1.xml, ctx-2.xml");
+        MySimpleBean mySimpleBean = context.getBean("mySimpleBean", MySimpleBean.class); // get by id/name
+        MySimpleBean mySimpleBean = context.getBean(MySimpleBean.class); // get by type
+    -->
+
+    <!-- ==========================================================================================
+         IMPORT
+        import xml
+    -->
+    <import resource="config2.xml"/>
+    <!-- import java config -->
+    <bean class="com.example.MyConfig"/>
+
+    <!-- ==========================================================================================
+         PROPERTIES FILE
+    -->
+    <context:property-placeholder location="classpath:myproperties.properties"/>
+
+    <bean id="myPropertyBean" class="com.example.MyPropertyBean">
+        <property name="myName" value="${myproperty.some.prop}"/>
+    </bean>
+
+    <!-- ==========================================================================================
+         ANNOTATIONS
+         <context:component-scan ... /> automatically enables <context:annotation-config ... />
+         can also use <context.include-filter ... /> and <context.exclude-filter .. />
+    -->
+    <context:component-scan base-packages="com.example"/>
+    <context:component-scan base-packages="com.example,package1, com.example.package2, etc"/>
+
+    <!-- ==========================================================================================
+         SIMPLE BEAN
+    -->
+    <bean id="mySimpleBean" class="com.example.MySimpleBean"/>
+
+    <!-- ==========================================================================================
+         SETTER INJECTION
+         setting a value
+    -->
+    <bean id="mySetterBeanValue" class="com.example.MySetterBeanValue">
+        <property name="myPropName" value="someValue"/>
+    </bean>
+    <!-- setting a value from properties file -->
+    <bean id="mySetterBeanValueFromProp" class="com.example.MySetterBeanValueFromProp">
+        <property name="myPropName" value="${myproperties.some.prop}"/>
+    </bean>
+    <!-- setting by ref -->
+    <bean id="mySetterBeanRef" class="com.example.MySetterBeanRef">
+        <property name="myPropName" ref="smySetterBeanValue"/>
+    </bean>
+    <!-- setting by ref (using element) -->
+    <bean id="mySetterBeanRefElm" class="com.example.MySetterBeanRefElm">
+        <property name="myPropName">
+            <ref bean="mySetterBeanRef"/>
+        </property>
+    </bean>
+
+    <!-- ==========================================================================================
+         CONSTRUCTOR INJECTION
+         Container will try to match the constructors based on type
+          Best strategy is to match the constructor argument order exactly
+          You can specify the target type of constructor argument with type="java.math.BigDecimal"
+    -->
+    <bean id="username2" class="java.lang.String">
+        <constructor-arg value="Lisa Ryan"/>
+    </bean>
+    <!-- constructor value element -->
+    <bean id="username" class="java.lang.String">
+        <constructor-arg>
+            <value>Conal Ryan</value>
+        </constructor-arg>
+    </bean>
+    <!-- constructor value by ref -->
+    <bean id="myConstructorBean" class="com.example.MyConstructorBean">
+        <constructor-arg value="mySimpleBean"/>
+    </bean>
+
+    <!-- ==========================================================================================
+         SCOPES
+
+         singleton 	(default) single instance (per Spring container)
+         prototype 	(new every time bean is needed, useful for state)
+         web-aware	(request, session, global session)
+    -->
+    <bean id="cache" class="com.example.MyCache"
+          scope="prototype">
+    </bean>
+
+    <!-- ==========================================================================================
+         LIFECYCLE
+         also available default-init-method="init" default-destory-method="destroy"
+    -->
+    <bean id="myInitBean" class="com.example.MyInitBean"
+          init-method="myInit" destroy-method="myDestory"/>
+</bean>
+
+        <!-- MyDecrytpionPostProcess must implement BeanPostProcessor -->
+<bean id="myDecryptPostProcess" class="com.example.MyDecryptionPostProcess"/>
+
+        <!-- ==========================================================================================
+             PROPERTY EDITORS
+             Spring has built-in support to convert Strings to Java types. Supported:
+                 numbers
+                 dates
+                 enumerations
+                 collections
+            or create your own
+        -->
+<bean id="myConversionService" class="org.springframework.context.support.ConversionServiceFacotryBean"/>
+
+        <!-- ==========================================================================================
+             PROFILES
+        -->
+<bean profile="dev">
+<!-- dev settings here -->
+</bean>
+
+        </beans>
