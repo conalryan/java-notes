@@ -1,0 +1,6 @@
+<?com.conalryan.com.conalryan.xml version="1.0" encoding="UTF-8" ?>
+<stocks>
+    <stock symbol="GCLT" price="8.90" time="2015-02-10 00:00:01"/>
+    <stock symbol="GOOG" price="700.10" time="2015-02-10 00:00:01"/>
+    <stock symbol="OTOW" price="60.41" time="2015-02-10 00:00:01"/>
+</stocks>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.conalryan.services.DatabasePersonServiceTest" time="8.706" tests="4" errors="4" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\bin"/>
+    <property name="java.vm.version" value="25.31-b07"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\developer\github\advancedjava\stockwebapp_9"/>
+    <property name="java.runtime.version" value="1.8.0_31-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Conal\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_31\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Lenovo\Password Manager\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin;C:\Python27;C:\Python27\Scripts;C:\cygwin64\bin;C:\Users\Conal\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Conal"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Conal"/>
+    <property name="java.class.path" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_31\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_31"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_31\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testAddStockToPerson" classname="com.conalryan.services.DatabasePersonServiceTest" time="2.695">
+    <error message="Could not initialize db because of:Could not connection to database.Communications link failure&#10;&#10;Last packet sent to the server was 0 ms ago." type="com.conalryan.util.DatabaseInitializationException"><![CDATA[com.conalryan.util.DatabaseInitializationException: Could not initialize db because of:Could not connection to database.Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.conalryan.util.DatabaseUtils.getConnection(DatabaseUtils.java:75)
+	at com.conalryan.util.DatabaseUtils.initializeDatabase(DatabaseUtils.java:94)
+	at com.conalryan.services.DatabasePersonServiceTest.setUp(DatabasePersonServiceTest.java:19)
+]]></error>
+    <system-out><![CDATA[00:19:25.270 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+00:19:25.296 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@d44fc21
+00:19:25.297 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@d44fc21
+00:19:25.297 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@d44fc21
+00:19:25.299 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@10bbd20a
+00:19:25.301 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@396f6598
+00:19:25.302 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@1d29cf23
+00:19:25.306 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1786dec2
+00:19:25.306 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1786dec2
+00:19:25.306 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1786dec2
+00:19:25.308 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@17579e0f
+00:19:25.308 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@17579e0f
+00:19:25.309 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@17579e0f
+00:19:25.312 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1b68ddbd
+00:19:25.312 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@1b68ddbd
+00:19:25.313 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@1b68ddbd
+00:19:25.316 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@76f2b07d
+00:19:25.316 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@76f2b07d
+00:19:25.316 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@76f2b07d
+00:19:25.321 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@1877ab81
+00:19:25.321 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@1877ab81
+00:19:25.321 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@1877ab81
+00:19:25.324 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1563da5
+00:19:25.324 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@1563da5
+00:19:25.325 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@1563da5
+00:19:25.328 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@76b0bfab
+00:19:25.328 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@76b0bfab
+00:19:25.328 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@76b0bfab
+00:19:25.331 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@86be70a
+00:19:25.332 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@86be70a
+00:19:25.334 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@3cb1ffe6
+00:19:25.334 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@3cb1ffe6
+00:19:25.336 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@2173f6d9
+00:19:25.337 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@2173f6d9
+00:19:25.339 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1a8a8f7c
+00:19:25.341 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@3234e239
+00:19:25.342 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@37d31475
+00:19:25.343 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@37d31475
+00:19:25.346 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@58c1670b
+00:19:25.346 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@58c1670b
+00:19:25.349 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@7a9273a8
+00:19:25.349 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@7a9273a8
+00:19:25.352 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@60285225
+00:19:25.352 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@60285225
+00:19:25.352 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@60285225
+00:19:25.356 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@42d8062c
+00:19:25.358 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@25af5db5
+00:19:25.358 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@25af5db5
+00:19:25.359 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@25af5db5
+00:19:25.360 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@5f3a4b84
+00:19:25.363 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@7b69c6ba
+00:19:25.363 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7b69c6ba
+00:19:25.364 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@371a67ec
+00:19:25.365 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@371a67ec
+00:19:25.367 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@77ec78b9
+00:19:25.367 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@77ec78b9
+00:19:25.369 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@3aeaafa6
+00:19:25.369 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@3aeaafa6
+00:19:25.372 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@1060b431
+00:19:25.372 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@1060b431
+00:19:25.373 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@e720b71
+00:19:25.374 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@462d5aee
+00:19:25.377 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@8646db9
+00:19:25.377 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@8646db9
+00:19:25.377 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@8646db9
+00:19:25.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@b7dd107
+00:19:25.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@b7dd107
+00:19:25.380 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@b7dd107
+00:19:25.381 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@3ecd23d9
+00:19:25.384 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@553a3d88
+00:19:25.384 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@553a3d88
+00:19:25.384 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@553a3d88
+00:19:25.388 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@74a10858
+00:19:25.388 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@74a10858
+00:19:25.388 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@74a10858
+00:19:25.390 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@1d371b2d
+00:19:25.392 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@43738a82
+00:19:25.400 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@150c158
+00:19:25.400 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@150c158
+00:19:25.401 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@10dba097
+00:19:25.406 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@4c762604
+00:19:25.406 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4c762604
+00:19:25.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@b3d7190
+00:19:25.411 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@b3d7190
+00:19:25.412 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@fe18270
+00:19:25.413 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@5123a213
+00:19:25.416 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@281e3708
+00:19:25.419 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@71623278
+00:19:25.420 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@71623278
+00:19:25.421 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@15b3e5b
+00:19:25.421 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@61ca2dfa
+00:19:25.422 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@4b53f538
+00:19:25.422 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@134593bf
+00:19:25.423 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@4bb4de6a
+00:19:25.423 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7ba18f1b
+00:19:25.423 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@2f8f5f62
+00:19:25.423 [main] DEBUG org.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@1068e947
+00:19:25.444 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.2.Final}
+00:19:25.451 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.2.6.Final}
+00:19:25.453 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+00:19:25.456 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+00:19:25.468 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+00:19:25.469 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+00:19:25.470 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+00:19:25.471 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+00:19:25.473 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [hilo] -> [org.hibernate.id.TableHiLoGenerator]
+00:19:25.473 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+00:19:25.475 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+00:19:25.478 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+00:19:25.480 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.SequenceGenerator]
+00:19:25.481 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+00:19:25.482 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+00:19:25.483 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+00:19:25.484 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+00:19:25.484 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+00:19:25.485 [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+00:19:25.487 [main] INFO  org.hibernate.cfg.Configuration - HHH000043: Configuring from resource: hibernate.cfg.xml
+00:19:25.487 [main] INFO  org.hibernate.cfg.Configuration - HHH000040: Configuration resource: hibernate.cfg.xml
+00:19:25.594 [main] DEBUG o.h.i.util.xml.DTDEntityResolver - Trying to resolve system-id [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+00:19:25.594 [main] DEBUG o.h.i.util.xml.DTDEntityResolver - Recognized hibernate namespace; attempting to resolve on classpath under org/hibernate/
+00:19:25.596 [main] DEBUG o.h.i.util.xml.DTDEntityResolver - Located [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd] in classpath
+00:19:25.626 [main] DEBUG org.hibernate.cfg.Configuration - connection.url=jdbc:mysql://localhost:3306/stocks
+00:19:25.626 [main] DEBUG org.hibernate.cfg.Configuration - hibernate.connection.username=monty
+00:19:25.626 [main] DEBUG org.hibernate.cfg.Configuration - hibernate.connection.password=some_pass
+00:19:25.626 [main] DEBUG org.hibernate.cfg.Configuration - connection.driver_class=com.mysql.jdbc.Driver
+00:19:25.626 [main] DEBUG org.hibernate.cfg.Configuration - hibernate.dialect=org.hibernate.dialect.MySQLDialect
+00:19:25.627 [main] DEBUG org.hibernate.cfg.Configuration - Session-factory config [null] named class [com.conalryan.model.Person] for mapping
+00:19:25.638 [main] DEBUG org.hibernate.cfg.Configuration - Session-factory config [null] named class [com.conalryan.model.Stock] for mapping
+00:19:25.639 [main] DEBUG org.hibernate.cfg.Configuration - Session-factory config [null] named class [com.conalryan.model.StockQuote] for mapping
+00:19:25.639 [main] DEBUG org.hibernate.cfg.Configuration - Session-factory config [null] named class [com.conalryan.model.PersonStock] for mapping
+00:19:25.639 [main] INFO  org.hibernate.cfg.Configuration - HHH000041: Configured SessionFactory: null
+00:19:25.640 [main] DEBUG org.hibernate.cfg.Configuration - Properties: {hibernate.connection.password=some_pass, java.runtime.name=Java(TM) SE Runtime Environment, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_31\jre\bin, java.vm.version=25.31-b07, hibernate.connection.username=monty, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=Service Pack 1, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\developer\github\advancedjava\stockwebapp_9, java.runtime.version=1.8.0_31-b13, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, basedir=C:\developer\github\advancedjava\stockwebapp_9, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_31\jre\lib\endorsed, os.arch=amd64, surefire.real.class.path=C:\developer\github\advancedjava\stockwebapp_9\target\surefire\surefirebooter8176402847984273210.jar, java.io.tmpdir=C:\Users\Conal\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 7, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.8.0_31\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Lenovo\Password Manager\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin;C:\Python27;C:\Python27\Scripts;C:\cygwin64\bin;C:\Users\Conal\AppData\Roaming\npm;., surefire.test.class.path=C:\developer\github\advancedjava\stockwebapp_9\target\test-classes;C:\developer\github\advancedjava\stockwebapp_9\target\classes;C:\Users\Conal\.m2\repository\org\springframework\spring-core\4.1.1.RELEASE\spring-core-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot\1.2.3.RELEASE\spring-boot-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-context\4.1.1.RELEASE\spring-context-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\1.2.3.RELEASE\spring-boot-autoconfigure-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\yaml\snakeyaml\1.14\snakeyaml-1.14.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-web\1.2.3.RELEASE\spring-boot-starter-web-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter\1.2.3.RELEASE\spring-boot-starter-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-logging\1.2.3.RELEASE\spring-boot-starter-logging-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.11\jcl-over-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\org\slf4j\jul-to-slf4j\1.7.11\jul-to-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.11\log4j-over-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\ch\qos\logback\logback-classic\1.1.3\logback-classic-1.1.3.jar;C:\Users\Conal\.m2\repository\ch\qos\logback\logback-core\1.1.3\logback-core-1.1.3.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\1.2.3.RELEASE\spring-boot-starter-tomcat-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.0.20\tomcat-embed-core-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.0.20\tomcat-embed-el-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-logging-juli\8.0.20\tomcat-embed-logging-juli-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.0.20\tomcat-embed-websocket-8.0.20.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.4.5\jackson-databind-2.4.5.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.4.5\jackson-annotations-2.4.5.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.4.5\jackson-core-2.4.5.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-validator\5.1.3.Final\hibernate-validator-5.1.3.Final.jar;C:\Users\Conal\.m2\repository\com\fasterxml\classmate\1.0.0\classmate-1.0.0.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-web\4.1.1.RELEASE\spring-web-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-aop\4.1.1.RELEASE\spring-aop-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-beans\4.1.1.RELEASE\spring-beans-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-webmvc\4.1.1.RELEASE\spring-webmvc-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-expression\4.1.1.RELEASE\spring-expression-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\javax\servlet\servlet-api\3.0-alpha-1\servlet-api-3.0-alpha-1.jar;C:\Users\Conal\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-core\4.2.6.Final\hibernate-core-4.2.6.Final.jar;C:\Users\Conal\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Conal\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\Conal\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Conal\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.1.Final\jboss-transaction-api_1.1_spec-1.0.1.Final.jar;C:\Users\Conal\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.2.Final\hibernate-commons-annotations-4.0.2.Final.jar;C:\Users\Conal\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\Conal\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Conal\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar;C:\Users\Conal\.m2\repository\org\apache\httpcomponents\httpcore\4.4\httpcore-4.4.jar;C:\Users\Conal\.m2\repository\org\apache\ibatis\ibatis-sqlmap\2.3.4.726\ibatis-sqlmap-2.3.4.726.jar;C:\Users\Conal\.m2\repository\joda-time\joda-time\2.7\joda-time-2.7.jar;C:\Users\Conal\.m2\repository\org\jadira\usertype\usertype.core\3.1.0.CR1\usertype.core-3.1.0.CR1.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-entitymanager\4.3.8.Final\hibernate-entitymanager-4.3.8.Final.jar;C:\Users\Conal\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;C:\Users\Conal\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\Conal\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;C:\Users\Conal\.m2\repository\org\slf4j\slf4j-api\1.7.11\slf4j-api-1.7.11.jar;C:\Users\Conal\.m2\repository\org\jadira\usertype\usertype.spi\3.1.0.CR1\usertype.spi-3.1.0.CR1.jar;C:\Users\Conal\.m2\repository\com\yahoofinance-api\yahoofinance-api\1.3.0\yahoofinance-api-1.3.0.jar;C:\Users\Conal\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Conal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Conal\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.1, user.home=C:\Users\Conal, user.timezone=America/New_York, java.awt.printerjob=sun.awt.windows.WPrinterJob, file.encoding=Cp1252, java.specification.version=1.8, hibernate.connection.driver_class=com.mysql.jdbc.Driver, java.class.path=C:\developer\github\advancedjava\stockwebapp_9\target\test-classes;C:\developer\github\advancedjava\stockwebapp_9\target\classes;C:\Users\Conal\.m2\repository\org\springframework\spring-core\4.1.1.RELEASE\spring-core-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot\1.2.3.RELEASE\spring-boot-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-context\4.1.1.RELEASE\spring-context-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\1.2.3.RELEASE\spring-boot-autoconfigure-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\yaml\snakeyaml\1.14\snakeyaml-1.14.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-web\1.2.3.RELEASE\spring-boot-starter-web-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter\1.2.3.RELEASE\spring-boot-starter-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-logging\1.2.3.RELEASE\spring-boot-starter-logging-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.11\jcl-over-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\org\slf4j\jul-to-slf4j\1.7.11\jul-to-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.11\log4j-over-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\ch\qos\logback\logback-classic\1.1.3\logback-classic-1.1.3.jar;C:\Users\Conal\.m2\repository\ch\qos\logback\logback-core\1.1.3\logback-core-1.1.3.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\1.2.3.RELEASE\spring-boot-starter-tomcat-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.0.20\tomcat-embed-core-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.0.20\tomcat-embed-el-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-logging-juli\8.0.20\tomcat-embed-logging-juli-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.0.20\tomcat-embed-websocket-8.0.20.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.4.5\jackson-databind-2.4.5.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.4.5\jackson-annotations-2.4.5.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.4.5\jackson-core-2.4.5.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-validator\5.1.3.Final\hibernate-validator-5.1.3.Final.jar;C:\Users\Conal\.m2\repository\com\fasterxml\classmate\1.0.0\classmate-1.0.0.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-web\4.1.1.RELEASE\spring-web-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-aop\4.1.1.RELEASE\spring-aop-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-beans\4.1.1.RELEASE\spring-beans-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-webmvc\4.1.1.RELEASE\spring-webmvc-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-expression\4.1.1.RELEASE\spring-expression-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\javax\servlet\servlet-api\3.0-alpha-1\servlet-api-3.0-alpha-1.jar;C:\Users\Conal\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-core\4.2.6.Final\hibernate-core-4.2.6.Final.jar;C:\Users\Conal\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Conal\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\Conal\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Conal\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.1.Final\jboss-transaction-api_1.1_spec-1.0.1.Final.jar;C:\Users\Conal\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.2.Final\hibernate-commons-annotations-4.0.2.Final.jar;C:\Users\Conal\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\Conal\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Conal\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar;C:\Users\Conal\.m2\repository\org\apache\httpcomponents\httpcore\4.4\httpcore-4.4.jar;C:\Users\Conal\.m2\repository\org\apache\ibatis\ibatis-sqlmap\2.3.4.726\ibatis-sqlmap-2.3.4.726.jar;C:\Users\Conal\.m2\repository\joda-time\joda-time\2.7\joda-time-2.7.jar;C:\Users\Conal\.m2\repository\org\jadira\usertype\usertype.core\3.1.0.CR1\usertype.core-3.1.0.CR1.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-entitymanager\4.3.8.Final\hibernate-entitymanager-4.3.8.Final.jar;C:\Users\Conal\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;C:\Users\Conal\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\Conal\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;C:\Users\Conal\.m2\repository\org\slf4j\slf4j-api\1.7.11\slf4j-api-1.7.11.jar;C:\Users\Conal\.m2\repository\org\jadira\usertype\usertype.spi\3.1.0.CR1\usertype.spi-3.1.0.CR1.jar;C:\Users\Conal\.m2\repository\com\yahoofinance-api\yahoofinance-api\1.3.0\yahoofinance-api-1.3.0.jar;C:\Users\Conal\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Conal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Conal\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;, user.name=Conal, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.8, sun.java.command=C:\developer\github\advancedjava\stockwebapp_9\target\surefire\surefirebooter8176402847984273210.jar C:\developer\github\advancedjava\stockwebapp_9\target\surefire\surefire7703263822199211164tmp C:\developer\github\advancedjava\stockwebapp_9\target\surefire\surefire_02652792207529425707tmp, java.home=C:\Program Files\Java\jdk1.8.0_31\jre, sun.arch.data.model=64, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.connection.url=jdbc:mysql://localhost:3306/stocks, user.language=en, java.specification.vendor=Oracle Corporation, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_31, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_31\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_31\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_31\jre\classes, java.vendor=Oracle Corporation, localRepository=C:\Users\Conal\.m2\repository, connection.driver_class=com.mysql.jdbc.Driver, file.separator=\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.io.unicode.encoding=UnicodeLittle, sun.cpu.endian=little, sun.desktop=windows, connection.url=jdbc:mysql://localhost:3306/stocks, sun.cpu.isalist=amd64}
+]]></system-out>
+  </testcase>
+  <testcase name="testAddOrUpdatePerson" classname="com.conalryan.services.DatabasePersonServiceTest" time="2.003">
+    <error message="Could not initialize db because of:Could not connection to database.Communications link failure&#10;&#10;Last packet sent to the server was 0 ms ago." type="com.conalryan.util.DatabaseInitializationException"><![CDATA[com.conalryan.util.DatabaseInitializationException: Could not initialize db because of:Could not connection to database.Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.conalryan.util.DatabaseUtils.getConnection(DatabaseUtils.java:75)
+	at com.conalryan.util.DatabaseUtils.initializeDatabase(DatabaseUtils.java:94)
+	at com.conalryan.services.DatabasePersonServiceTest.setUp(DatabasePersonServiceTest.java:19)
+]]></error>
+  </testcase>
+  <testcase name="testGetPerson" classname="com.conalryan.services.DatabasePersonServiceTest" time="2.004">
+    <error message="Could not initialize db because of:Could not connection to database.Communications link failure&#10;&#10;Last packet sent to the server was 0 ms ago." type="com.conalryan.util.DatabaseInitializationException"><![CDATA[com.conalryan.util.DatabaseInitializationException: Could not initialize db because of:Could not connection to database.Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.conalryan.util.DatabaseUtils.getConnection(DatabaseUtils.java:75)
+	at com.conalryan.util.DatabaseUtils.initializeDatabase(DatabaseUtils.java:94)
+	at com.conalryan.services.DatabasePersonServiceTest.setUp(DatabasePersonServiceTest.java:19)
+]]></error>
+  </testcase>
+  <testcase name="testGetStocks" classname="com.conalryan.services.DatabasePersonServiceTest" time="2.004">
+    <error message="Could not initialize db because of:Could not connection to database.Communications link failure&#10;&#10;Last packet sent to the server was 0 ms ago." type="com.conalryan.util.DatabaseInitializationException"><![CDATA[com.conalryan.util.DatabaseInitializationException: Could not initialize db because of:Could not connection to database.Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.conalryan.util.DatabaseUtils.getConnection(DatabaseUtils.java:75)
+	at com.conalryan.util.DatabaseUtils.initializeDatabase(DatabaseUtils.java:94)
+	at com.conalryan.services.DatabasePersonServiceTest.setUp(DatabasePersonServiceTest.java:19)
+]]></error>
+  </testcase>
+</testsuite>

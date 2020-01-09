@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.conalryan.util.DatabaseUtilsTest" time="6.794" tests="3" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\bin"/>
+    <property name="java.vm.version" value="25.31-b07"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\developer\github\advancedjava\stockwebapp_9"/>
+    <property name="java.runtime.version" value="1.8.0_31-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Conal\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_31\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Lenovo\Password Manager\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin;C:\Python27;C:\Python27\Scripts;C:\cygwin64\bin;C:\Users\Conal\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Conal"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="Conal"/>
+    <property name="java.class.path" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_31\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_31"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_31\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_31\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testGetSessionFactory" classname="com.conalryan.util.DatabaseUtilsTest" time="2.78">
+    <error message="Error activating Bean Validation integration" type="org.hibernate.cfg.beanvalidation.IntegrationException"><![CDATA[org.hibernate.cfg.beanvalidation.IntegrationException: Error activating Bean Validation integration
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:372)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:360)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:308)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at org.hibernate.validator.HibernateValidator.createGenericConfiguration(HibernateValidator.java:41)
+	at javax.validation.Validation$GenericBootstrapImpl.configure(Validation.java:269)
+	at javax.validation.Validation.buildDefaultValidatorFactory(Validation.java:111)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.getValidatorFactory(TypeSafeActivator.java:445)
+	at org.hibernate.cfg.beanvalidation.TypeSafeActivator.activate(TypeSafeActivator.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.hibernate.cfg.beanvalidation.BeanValidationIntegrator.integrate(BeanValidationIntegrator.java:150)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:304)
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1790)
+	at com.conalryan.util.DatabaseUtils.getSessionFactory(DatabaseUtils.java:43)
+	at com.conalryan.util.DatabaseUtilsTest.testGetSessionFactory(DatabaseUtilsTest.java:16)
+]]></error>
+    <system-out><![CDATA[00:19:52.950 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+00:19:53.012 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.jadira.usertype.dateandtime.joda.integrator.UserTypeJodaTimeHibernateIntegrator].
+00:19:53.012 [main] DEBUG o.h.i.internal.IntegratorServiceImpl - Adding Integrator [org.jadira.usertype.moneyandcurrency.joda.integrator.UserTypeJodaMoneyHibernateIntegrator].
+00:19:53.071 [main] DEBUG org.hibernate.cfg.Configuration - Preparing to build session factory with filters : {}
+00:19:53.084 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+00:19:53.085 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 20
+00:19:53.085 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000006: Autocommit mode: false
+00:19:53.085 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/stocks]
+00:19:53.085 [main] INFO  o.h.s.j.c.i.DriverManagerConnectionProviderImpl - HHH000046: Connection properties: {user=monty, password=some_pass}
+00:19:53.106 [main] DEBUG o.h.s.j.c.i.DriverManagerConnectionProviderImpl - Opening new JDBC connection
+00:19:55.108 [main] WARN  o.h.e.jdbc.internal.JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+00:19:55.165 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+00:19:55.208 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+00:19:55.274 [main] DEBUG org.hibernate.cfg.Configuration - Processing hbm.xml files
+00:19:55.274 [main] DEBUG org.hibernate.cfg.Configuration - Process annotated classes
+00:19:55.283 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.conalryan.model.Person
+00:19:55.324 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+00:19:55.326 [main] DEBUG org.hibernate.cfg.AnnotationBinder - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+00:19:55.339 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Person
+00:19:55.342 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.conalryan.model.Person on table people
+00:19:55.426 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(people), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+00:19:55.430 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+00:19:55.433 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+00:19:55.435 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+00:19:55.440 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(people), mappingColumn=birth_date, insertable=true, updatable=true, unique=false}
+00:19:55.440 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property birthDate with lazy=false
+00:19:55.440 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for birthDate
+00:19:55.441 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property birthDate
+00:19:55.441 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(people), mappingColumn=first_name, insertable=true, updatable=true, unique=false}
+00:19:55.441 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstName with lazy=false
+00:19:55.441 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for firstName
+00:19:55.442 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property firstName
+00:19:55.442 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(people), mappingColumn=last_name, insertable=true, updatable=true, unique=false}
+00:19:55.442 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property lastName with lazy=false
+00:19:55.442 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for lastName
+00:19:55.442 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property lastName
+00:19:55.445 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.conalryan.model.Stock
+00:19:55.446 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+00:19:55.446 [main] DEBUG org.hibernate.cfg.AnnotationBinder - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+00:19:55.446 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name Stock
+00:19:55.446 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.conalryan.model.Stock on table stocks
+00:19:55.448 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(stocks), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+00:19:55.449 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+00:19:55.449 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+00:19:55.449 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+00:19:55.449 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(stocks), mappingColumn=company_name, insertable=true, updatable=true, unique=false}
+00:19:55.450 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property companyName with lazy=false
+00:19:55.450 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for companyName
+00:19:55.450 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property companyName
+00:19:55.451 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(stocks), mappingColumn=exchange, insertable=true, updatable=true, unique=false}
+00:19:55.451 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property exchange with lazy=false
+00:19:55.451 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for exchange
+00:19:55.451 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property exchange
+00:19:55.452 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(stocks), mappingColumn=ticker_symbol, insertable=true, updatable=true, unique=false}
+00:19:55.452 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property tickerSymbol with lazy=false
+00:19:55.459 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for tickerSymbol
+00:19:55.460 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property tickerSymbol
+00:19:55.460 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.conalryan.model.StockQuote
+00:19:55.461 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+00:19:55.462 [main] DEBUG org.hibernate.cfg.AnnotationBinder - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+00:19:55.463 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name StockQuote
+00:19:55.463 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.conalryan.model.StockQuote on table quotes
+00:19:55.465 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(quotes), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+00:19:55.465 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+00:19:55.466 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+00:19:55.466 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+00:19:55.466 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(quotes), mappingColumn=time, insertable=true, updatable=true, unique=false}
+00:19:55.466 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property date with lazy=false
+00:19:55.466 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for date
+00:19:55.466 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property date
+00:19:55.467 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(quotes), mappingColumn=price, insertable=true, updatable=true, unique=false}
+00:19:55.467 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property price with lazy=false
+00:19:55.467 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for price
+00:19:55.467 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property price
+00:19:55.467 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(quotes), mappingColumn=symbol, insertable=true, updatable=true, unique=false}
+00:19:55.467 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property symbol with lazy=false
+00:19:55.467 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for symbol
+00:19:55.468 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property symbol
+00:19:55.468 [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.conalryan.model.PersonStock
+00:19:55.468 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+00:19:55.468 [main] DEBUG org.hibernate.cfg.AnnotationBinder - No value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+00:19:55.468 [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name PersonStock
+00:19:55.468 [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.conalryan.model.PersonStock on table people_stocks
+00:19:55.476 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(stockappdb.people_stocks), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+00:19:55.476 [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+00:19:55.476 [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+00:19:55.476 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+00:19:55.477 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='person_id', referencedColumn='ID', mappedBy=''}
+00:19:55.477 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(stockappdb.people_stocks), mappingColumn=person, insertable=true, updatable=true, unique=false}
+00:19:55.481 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property person
+00:19:55.481 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3JoinColumn{logicalColumnName='stock_id', referencedColumn='ID', mappedBy=''}
+00:19:55.481 [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(stockappdb.people_stocks), mappingColumn=stock, insertable=true, updatable=true, unique=false}
+00:19:55.481 [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property stock
+00:19:55.482 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for id
+00:19:55.483 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for birthDate
+00:19:55.484 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for firstName
+00:19:55.484 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for lastName
+00:19:55.485 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for id
+00:19:55.485 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for companyName
+00:19:55.485 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for exchange
+00:19:55.485 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for tickerSymbol
+00:19:55.485 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for id
+00:19:55.485 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for date
+00:19:55.485 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for price
+00:19:55.485 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for symbol
+00:19:55.485 [main] DEBUG o.h.c.annotations.SimpleValueBinder - Setting SimpleValue typeName for id
+00:19:55.487 [main] DEBUG org.hibernate.cfg.Configuration - Processing fk mappings (*ToOne and JoinedSubclass)
+00:19:55.559 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+00:19:55.559 [main] DEBUG org.hibernate.cfg.Configuration - Processing extends queue
+00:19:55.559 [main] DEBUG org.hibernate.cfg.Configuration - Processing collection mappings
+00:19:55.560 [main] DEBUG org.hibernate.cfg.Configuration - Processing native query and ResultSetMapping mappings
+00:19:55.560 [main] DEBUG org.hibernate.cfg.Configuration - Processing association property references
+00:19:55.560 [main] DEBUG org.hibernate.cfg.Configuration - Creating tables' unique integer identifiers
+00:19:55.561 [main] DEBUG org.hibernate.cfg.Configuration - Processing foreign key constraints
+00:19:55.561 [main] DEBUG org.hibernate.cfg.Configuration - Resolving reference to class: com.conalryan.model.Person
+00:19:55.562 [main] DEBUG org.hibernate.cfg.Configuration - Resolving reference to class: com.conalryan.model.Stock
+00:19:55.593 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic flush during beforeCompletion(): disabled
+00:19:55.594 [main] DEBUG org.hibernate.cfg.SettingsFactory - Automatic session close at end of transaction: disabled
+00:19:55.594 [main] DEBUG org.hibernate.cfg.SettingsFactory - Scrollable result sets: disabled
+00:19:55.594 [main] DEBUG org.hibernate.cfg.SettingsFactory - Wrap result sets: disabled
+00:19:55.594 [main] DEBUG org.hibernate.cfg.SettingsFactory - JDBC3 getGeneratedKeys(): disabled
+00:19:55.594 [main] DEBUG org.hibernate.cfg.SettingsFactory - multi-tenancy strategy : NONE
+00:19:55.594 [main] DEBUG org.hibernate.cfg.SettingsFactory - Connection release mode: auto
+00:19:55.595 [main] INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions)
+00:19:55.600 [main] DEBUG org.hibernate.cfg.SettingsFactory - Using BatchFetchStyle : LEGACY
+00:19:55.601 [main] DEBUG org.hibernate.cfg.SettingsFactory - Maximum outer join fetch depth: 2
+00:19:55.601 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default batch fetch size: 1
+00:19:55.601 [main] DEBUG org.hibernate.cfg.SettingsFactory - Generate SQL with comments: disabled
+00:19:55.601 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL updates by primary key: disabled
+00:19:55.601 [main] DEBUG org.hibernate.cfg.SettingsFactory - Order SQL inserts for batching: disabled
+00:19:55.601 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default null ordering: none
+00:19:55.602 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query translator: org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory
+00:19:55.606 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+00:19:55.606 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query language substitutions: {}
+00:19:55.607 [main] DEBUG org.hibernate.cfg.SettingsFactory - JPA-QL strict compliance: disabled
+00:19:55.607 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache: enabled
+00:19:55.607 [main] DEBUG org.hibernate.cfg.SettingsFactory - Query cache: disabled
+00:19:55.607 [main] DEBUG org.hibernate.cfg.SettingsFactory - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+00:19:55.608 [main] DEBUG org.hibernate.cfg.SettingsFactory - org.hibernate.cache.internal.NoCachingRegionFactory did not provide constructor accepting java.util.Properties; attempting no-arg constructor.
+00:19:55.608 [main] DEBUG org.hibernate.cfg.SettingsFactory - Optimize cache for minimal puts: disabled
+00:19:55.609 [main] DEBUG org.hibernate.cfg.SettingsFactory - Structured second-level cache entries: disabled
+00:19:55.609 [main] DEBUG org.hibernate.cfg.SettingsFactory - Second-level cache direct-reference entries: disabled
+00:19:55.609 [main] DEBUG org.hibernate.cfg.SettingsFactory - Statistics: disabled
+00:19:55.609 [main] DEBUG org.hibernate.cfg.SettingsFactory - Deleted entity synthetic identifier rollback: disabled
+00:19:55.609 [main] DEBUG org.hibernate.cfg.SettingsFactory - Default entity-mode: pojo
+00:19:55.609 [main] DEBUG org.hibernate.cfg.SettingsFactory - Named query checking : enabled
+00:19:55.609 [main] DEBUG org.hibernate.cfg.SettingsFactory - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+00:19:55.609 [main] DEBUG org.hibernate.cfg.SettingsFactory - Allow initialization of lazy state outside session : : disabled
+00:19:55.610 [main] DEBUG org.hibernate.cfg.SettingsFactory - JTA Track by Thread: enabled
+00:19:55.635 [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+00:19:55.647 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+00:19:55.647 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.runtime.name=Java(TM) SE Runtime Environment, hibernate.connection.password=some_pass, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_31\jre\bin, java.vm.version=25.31-b07, hibernate.connection.username=monty, java.vm.vendor=Oracle Corporation, java.vendor.url=http://java.oracle.com/, path.separator=;, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding.pkg=sun.io, user.script=, user.country=US, sun.java.launcher=SUN_STANDARD, sun.os.patch.level=Service Pack 1, java.vm.specification.name=Java Virtual Machine Specification, user.dir=C:\developer\github\advancedjava\stockwebapp_9, java.runtime.version=1.8.0_31-b13, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, basedir=C:\developer\github\advancedjava\stockwebapp_9, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_31\jre\lib\endorsed, os.arch=amd64, surefire.real.class.path=C:\developer\github\advancedjava\stockwebapp_9\target\surefire\surefirebooter8176402847984273210.jar, java.io.tmpdir=C:\Users\Conal\AppData\Local\Temp\, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, user.variant=, os.name=Windows 7, sun.jnu.encoding=Cp1252, java.library.path=C:\Program Files\Java\jdk1.8.0_31\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files (x86)\Lenovo\Access Connections\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files (x86)\Lenovo\Password Manager\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_31\bin;C:\Program Files\Apache Software Foundation\apache-maven-3.2.5\bin;C:\Python27;C:\Python27\Scripts;C:\cygwin64\bin;C:\Users\Conal\AppData\Roaming\npm;., surefire.test.class.path=C:\developer\github\advancedjava\stockwebapp_9\target\test-classes;C:\developer\github\advancedjava\stockwebapp_9\target\classes;C:\Users\Conal\.m2\repository\org\springframework\spring-core\4.1.1.RELEASE\spring-core-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot\1.2.3.RELEASE\spring-boot-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-context\4.1.1.RELEASE\spring-context-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\1.2.3.RELEASE\spring-boot-autoconfigure-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\yaml\snakeyaml\1.14\snakeyaml-1.14.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-web\1.2.3.RELEASE\spring-boot-starter-web-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter\1.2.3.RELEASE\spring-boot-starter-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-logging\1.2.3.RELEASE\spring-boot-starter-logging-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.11\jcl-over-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\org\slf4j\jul-to-slf4j\1.7.11\jul-to-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.11\log4j-over-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\ch\qos\logback\logback-classic\1.1.3\logback-classic-1.1.3.jar;C:\Users\Conal\.m2\repository\ch\qos\logback\logback-core\1.1.3\logback-core-1.1.3.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\1.2.3.RELEASE\spring-boot-starter-tomcat-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.0.20\tomcat-embed-core-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.0.20\tomcat-embed-el-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-logging-juli\8.0.20\tomcat-embed-logging-juli-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.0.20\tomcat-embed-websocket-8.0.20.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.4.5\jackson-databind-2.4.5.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.4.5\jackson-annotations-2.4.5.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.4.5\jackson-core-2.4.5.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-validator\5.1.3.Final\hibernate-validator-5.1.3.Final.jar;C:\Users\Conal\.m2\repository\com\fasterxml\classmate\1.0.0\classmate-1.0.0.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-web\4.1.1.RELEASE\spring-web-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-aop\4.1.1.RELEASE\spring-aop-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-beans\4.1.1.RELEASE\spring-beans-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-webmvc\4.1.1.RELEASE\spring-webmvc-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-expression\4.1.1.RELEASE\spring-expression-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\javax\servlet\servlet-api\3.0-alpha-1\servlet-api-3.0-alpha-1.jar;C:\Users\Conal\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-core\4.2.6.Final\hibernate-core-4.2.6.Final.jar;C:\Users\Conal\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Conal\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\Conal\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Conal\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.1.Final\jboss-transaction-api_1.1_spec-1.0.1.Final.jar;C:\Users\Conal\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.2.Final\hibernate-commons-annotations-4.0.2.Final.jar;C:\Users\Conal\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\Conal\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Conal\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar;C:\Users\Conal\.m2\repository\org\apache\httpcomponents\httpcore\4.4\httpcore-4.4.jar;C:\Users\Conal\.m2\repository\org\apache\ibatis\ibatis-sqlmap\2.3.4.726\ibatis-sqlmap-2.3.4.726.jar;C:\Users\Conal\.m2\repository\joda-time\joda-time\2.7\joda-time-2.7.jar;C:\Users\Conal\.m2\repository\org\jadira\usertype\usertype.core\3.1.0.CR1\usertype.core-3.1.0.CR1.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-entitymanager\4.3.8.Final\hibernate-entitymanager-4.3.8.Final.jar;C:\Users\Conal\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;C:\Users\Conal\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\Conal\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;C:\Users\Conal\.m2\repository\org\slf4j\slf4j-api\1.7.11\slf4j-api-1.7.11.jar;C:\Users\Conal\.m2\repository\org\jadira\usertype\usertype.spi\3.1.0.CR1\usertype.spi-3.1.0.CR1.jar;C:\Users\Conal\.m2\repository\com\yahoofinance-api\yahoofinance-api\1.3.0\yahoofinance-api-1.3.0.jar;C:\Users\Conal\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Conal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Conal\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;, java.specification.name=Java Platform API Specification, java.class.version=52.0, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.version=6.1, user.home=C:\Users\Conal, user.timezone=America/New_York, java.awt.printerjob=sun.awt.windows.WPrinterJob, java.specification.version=1.8, file.encoding=Cp1252, hibernate.connection.driver_class=com.mysql.jdbc.Driver, user.name=Conal, java.class.path=C:\developer\github\advancedjava\stockwebapp_9\target\test-classes;C:\developer\github\advancedjava\stockwebapp_9\target\classes;C:\Users\Conal\.m2\repository\org\springframework\spring-core\4.1.1.RELEASE\spring-core-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot\1.2.3.RELEASE\spring-boot-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-context\4.1.1.RELEASE\spring-context-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\1.2.3.RELEASE\spring-boot-autoconfigure-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\yaml\snakeyaml\1.14\snakeyaml-1.14.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-web\1.2.3.RELEASE\spring-boot-starter-web-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter\1.2.3.RELEASE\spring-boot-starter-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-logging\1.2.3.RELEASE\spring-boot-starter-logging-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.11\jcl-over-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\org\slf4j\jul-to-slf4j\1.7.11\jul-to-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\org\slf4j\log4j-over-slf4j\1.7.11\log4j-over-slf4j-1.7.11.jar;C:\Users\Conal\.m2\repository\ch\qos\logback\logback-classic\1.1.3\logback-classic-1.1.3.jar;C:\Users\Conal\.m2\repository\ch\qos\logback\logback-core\1.1.3\logback-core-1.1.3.jar;C:\Users\Conal\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\1.2.3.RELEASE\spring-boot-starter-tomcat-1.2.3.RELEASE.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\8.0.20\tomcat-embed-core-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\8.0.20\tomcat-embed-el-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-logging-juli\8.0.20\tomcat-embed-logging-juli-8.0.20.jar;C:\Users\Conal\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\8.0.20\tomcat-embed-websocket-8.0.20.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.4.5\jackson-databind-2.4.5.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.4.5\jackson-annotations-2.4.5.jar;C:\Users\Conal\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.4.5\jackson-core-2.4.5.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-validator\5.1.3.Final\hibernate-validator-5.1.3.Final.jar;C:\Users\Conal\.m2\repository\com\fasterxml\classmate\1.0.0\classmate-1.0.0.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-web\4.1.1.RELEASE\spring-web-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-aop\4.1.1.RELEASE\spring-aop-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-beans\4.1.1.RELEASE\spring-beans-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-webmvc\4.1.1.RELEASE\spring-webmvc-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\org\springframework\spring-expression\4.1.1.RELEASE\spring-expression-4.1.1.RELEASE.jar;C:\Users\Conal\.m2\repository\javax\servlet\servlet-api\3.0-alpha-1\servlet-api-3.0-alpha-1.jar;C:\Users\Conal\.m2\repository\mysql\mysql-connector-java\5.1.6\mysql-connector-java-5.1.6.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-core\4.2.6.Final\hibernate-core-4.2.6.Final.jar;C:\Users\Conal\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Conal\.m2\repository\org\jboss\logging\jboss-logging\3.1.0.GA\jboss-logging-3.1.0.GA.jar;C:\Users\Conal\.m2\repository\dom4j\dom4j\1.6.1\dom4j-1.6.1.jar;C:\Users\Conal\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.1_spec\1.0.1.Final\jboss-transaction-api_1.1_spec-1.0.1.Final.jar;C:\Users\Conal\.m2\repository\org\hibernate\common\hibernate-commons-annotations\4.0.2.Final\hibernate-commons-annotations-4.0.2.Final.jar;C:\Users\Conal\.m2\repository\org\javassist\javassist\3.18.1-GA\javassist-3.18.1-GA.jar;C:\Users\Conal\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.0-api\1.0.1.Final\hibernate-jpa-2.0-api-1.0.1.Final.jar;C:\Users\Conal\.m2\repository\javax\validation\validation-api\1.0.0.GA\validation-api-1.0.0.GA.jar;C:\Users\Conal\.m2\repository\org\apache\httpcomponents\httpcore\4.4\httpcore-4.4.jar;C:\Users\Conal\.m2\repository\org\apache\ibatis\ibatis-sqlmap\2.3.4.726\ibatis-sqlmap-2.3.4.726.jar;C:\Users\Conal\.m2\repository\joda-time\joda-time\2.7\joda-time-2.7.jar;C:\Users\Conal\.m2\repository\org\jadira\usertype\usertype.core\3.1.0.CR1\usertype.core-3.1.0.CR1.jar;C:\Users\Conal\.m2\repository\org\hibernate\hibernate-entitymanager\4.3.8.Final\hibernate-entitymanager-4.3.8.Final.jar;C:\Users\Conal\.m2\repository\org\jboss\logging\jboss-logging-annotations\1.2.0.Beta1\jboss-logging-annotations-1.2.0.Beta1.jar;C:\Users\Conal\.m2\repository\org\hibernate\javax\persistence\hibernate-jpa-2.1-api\1.0.0.Final\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\Conal\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.0.0.Final\jboss-transaction-api_1.2_spec-1.0.0.Final.jar;C:\Users\Conal\.m2\repository\org\slf4j\slf4j-api\1.7.11\slf4j-api-1.7.11.jar;C:\Users\Conal\.m2\repository\org\jadira\usertype\usertype.spi\3.1.0.CR1\usertype.spi-3.1.0.CR1.jar;C:\Users\Conal\.m2\repository\com\yahoofinance-api\yahoofinance-api\1.3.0\yahoofinance-api-1.3.0.jar;C:\Users\Conal\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Conal\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Conal\.m2\repository\org\mockito\mockito-all\1.9.5\mockito-all-1.9.5.jar;, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.version=1.8, sun.arch.data.model=64, java.home=C:\Program Files\Java\jdk1.8.0_31\jre, sun.java.command=C:\developer\github\advancedjava\stockwebapp_9\target\surefire\surefirebooter8176402847984273210.jar C:\developer\github\advancedjava\stockwebapp_9\target\surefire\surefire7703263822199211164tmp C:\developer\github\advancedjava\stockwebapp_9\target\surefire\surefire_02652792207529425707tmp, hibernate.connection.url=jdbc:mysql://localhost:3306/stocks, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.specification.vendor=Oracle Corporation, user.language=en, awt.toolkit=sun.awt.windows.WToolkit, java.vm.info=mixed mode, java.version=1.8.0_31, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_31\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_31\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_31\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_31\jre\classes, java.vendor=Oracle Corporation, localRepository=C:\Users\Conal\.m2\repository, file.separator=\, connection.driver_class=com.mysql.jdbc.Driver, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, sun.cpu.endian=little, sun.io.unicode.encoding=UnicodeLittle, sun.desktop=windows, connection.url=jdbc:mysql://localhost:3306/stocks, sun.cpu.isalist=amd64}
+]]></system-out>
+  </testcase>
+  <testcase name="testInitializeDatabase" classname="com.conalryan.util.DatabaseUtilsTest" time="2.005">
+    <error message="Could not initialize db because of:Could not connection to database.Communications link failure&#10;&#10;Last packet sent to the server was 0 ms ago." type="com.conalryan.util.DatabaseInitializationException"><![CDATA[com.conalryan.util.DatabaseInitializationException: Could not initialize db because of:Could not connection to database.Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.conalryan.util.DatabaseUtils.getConnection(DatabaseUtils.java:75)
+	at com.conalryan.util.DatabaseUtils.initializeDatabase(DatabaseUtils.java:94)
+	at com.conalryan.util.DatabaseUtilsTest.testInitializeDatabase(DatabaseUtilsTest.java:29)
+]]></error>
+  </testcase>
+  <testcase name="testGetConnection1" classname="com.conalryan.util.DatabaseUtilsTest" time="2.009">
+    <error message="Could not connection to database.Communications link failure&#10;&#10;Last packet sent to the server was 0 ms ago." type="com.conalryan.util.DatabaseConnectionException"><![CDATA[com.conalryan.util.DatabaseConnectionException: Could not connection to database.Communications link failure
+
+Last packet sent to the server was 0 ms ago.
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at java.net.Socket.<init>(Socket.java:434)
+	at java.net.Socket.<init>(Socket.java:244)
+	at com.mysql.jdbc.StandardSocketFactory.connect(StandardSocketFactory.java:253)
+	at com.mysql.jdbc.MysqlIO.<init>(MysqlIO.java:280)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2026)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:718)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:46)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:408)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:406)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:302)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:282)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at com.conalryan.util.DatabaseUtils.getConnection(DatabaseUtils.java:75)
+	at com.conalryan.util.DatabaseUtilsTest.testGetConnection1(DatabaseUtilsTest.java:22)
+]]></error>
+  </testcase>
+</testsuite>
