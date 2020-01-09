@@ -1,0 +1,38 @@
+# https://github.com/johnynek/bazel-deps
+#
+# IMPORTANT: Run 
+# cd $BAZEL_DEPS 
+# bazel //:parse generate -- --repo-root "$MY_PROJ_DIR" --sha-file 3rdparty/workspace.bzl --deps dependencies.yaml
+#
+options:
+  #  versionConflictPolicy: "fail" defaults to "highest", could also use "fixed""
+  resolvers:
+    - id: "mavencentral"
+      type: "default"
+      url: "https://repo.maven.apache.org/maven2/"
+
+dependencies:
+  # Spring
+  org.springframework.boot:
+    spring-boot-starter-web:
+      version: "1.5.21.RELEASE"
+      lang: java
+    spring-boot-starter-tomcat:
+      version: "1.5.21.RELEASE"
+      lang: java
+    spring-boot-starter-test:
+      version: "1.5.21.RELEASE"
+      lang: java
+  
+  # Logging
+  org.slf4j:
+    slf4j-api:
+      version: "1.7.26"
+      lang: java
+    slf4j-log4j12:
+      version: "1.7.26"
+      lang: java
+  log4j:
+    log4j:
+      version: "1.2.17"
+      lang: java

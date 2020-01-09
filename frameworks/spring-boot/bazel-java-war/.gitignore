@@ -1,0 +1,28 @@
+# IDE
+.idea
+*.iml
+.vscode
+
+# Build targets
+**/target/
+**/bin/
+
+# UI
+**/static/
+
+# Logs
+**/*.log
+**/.settings
+**/.classpath
+**/.factorypath
+**/.project
+.vscode/launch.test.json
+
+# Specific Files
+descriptiveContentSwagger.yaml
+descriptiveContentSwagger v0.11.0.yaml
+swagger-codegen-2.3.1.jar
+swagger-codegen-cli-2.3.0.jar
+
+# Bazel
+/bazel-*

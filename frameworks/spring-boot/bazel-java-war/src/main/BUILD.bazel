@@ -1,0 +1,50 @@
+java_library(
+    name = "tomcat-app",
+    srcs = glob(["java/com/ex/bazel/springboot/**/*.java"]),
+    resources = glob(["resources/**/*"]),
+    visibility = ["//src/test:__subpackages__"],
+    deps = [
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_web",
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_tomcat",
+        "//3rdparty/jvm/org/slf4j:slf4j_api"
+    ],
+    runtime_deps = [
+    ]
+)
+
+java_binary(
+    name = "tomcat-webapp",
+    main_class = "com.ex.bazel.springboot.Application",
+    resources = glob(["webapp/**/*"]),
+    runtime_deps = [
+        ":tomcat-app",
+    ],
+)
+
+java_library(
+    name = "app",
+    srcs = glob(["java/com/ex/bazel/springboot/**/*.java"]),
+    resources = glob(["resources/**/*"]),
+    visibility = ["//src/test:__subpackages__"],
+    deps = [
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_web",
+        "//3rdparty/jvm/javax/servlet:javax_servlet_api",
+        "//3rdparty/jvm/org/slf4j:slf4j_api"
+    ],
+    runtime_deps = [
+    ]
+)
+
+# WAR
+load("@io_bazel_rules_java_war//java_war:defs.bzl", "java_war")
+
+java_war(
+    name = "java-war",
+    java_srcs = glob(["java/com/ex/bazel/springboot/**/*.java"]),
+    web_app_dir = "webapp",
+    deps = [
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_web",
+        "//3rdparty/jvm/javax/servlet:javax_servlet_api",
+        "//3rdparty/jvm/org/slf4j:slf4j_api",
+    ],
+)

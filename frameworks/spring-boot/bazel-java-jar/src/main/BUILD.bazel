@@ -1,0 +1,24 @@
+java_library(
+    name = "app",
+    srcs = glob(["java/com/ex/bazel/springboot/**/*.java"]),
+    resources = glob(["resources/**/*"]),
+    visibility = ["//src/test:__subpackages__"],
+    deps = [
+        # Spring
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_web",
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_tomcat",
+        # SLF4J
+        "//3rdparty/jvm/org/slf4j:slf4j_api"
+    ],
+    runtime_deps = [
+    ]
+)
+
+java_binary(
+    name = "webapp",
+    main_class = "com.ex.bazel.springboot.Application",
+    runtime_deps = [
+        ":app"
+    ],
+)
+

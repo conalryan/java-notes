@@ -1,0 +1,28 @@
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+RULES_JVM_EXTERNAL_TAG = "2.7"
+RULES_JVM_EXTERNAL_SHA = "f04b1466a00a2845106801e0c5cec96841f49ea4e7d1df88dc8e4bf31523df74"
+
+SPRING_BOOT_VERSION = "1.5.21.RELEASE"
+
+http_archive(
+    name = "rules_jvm_external",
+    strip_prefix = "rules_jvm_external-%s" % RULES_JVM_EXTERNAL_TAG,
+    sha256 = RULES_JVM_EXTERNAL_SHA,
+    url = "https://github.com/bazelbuild/rules_jvm_external/archive/%s.zip" % RULES_JVM_EXTERNAL_TAG,
+)
+
+load("@rules_jvm_external//:defs.bzl", "maven_install")
+load("@rules_jvm_external//:specs.bzl", "maven")
+
+maven_install(
+  artifacts = [
+    "org.springframework.boot:spring-boot-starter-web:%s" % SPRING_BOOT_VERSION,
+    "org.springframework.boot:spring-boot-starter-tomcat:%s" % SPRING_BOOT_VERSION,
+    "org.springframework.boot:spring-boot-starter-test:%s" % SPRING_BOOT_VERSION,
+  ],
+  repositories = [
+    "https://repo1.maven.org/maven2/",
+  ],
+  fetch_sources = True,
+)

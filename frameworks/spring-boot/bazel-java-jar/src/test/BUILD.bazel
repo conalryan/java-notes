@@ -1,0 +1,11 @@
+load("//:tools/junit.bzl", "junit_tests")
+
+junit_tests(
+    name = "app_tests",
+    srcs = glob(["java/com/ex/bazel/springboot/**/*.java"]),
+    deps = [
+        "//src/main:app",
+        "//3rdparty/jvm/org/springframework/boot:spring_boot_starter_test",
+    ],
+    visibility = ["//visibility:public"]
+)
