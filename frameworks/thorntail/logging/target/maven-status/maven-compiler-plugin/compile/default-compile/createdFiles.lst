@@ -1,0 +1,5 @@
+org/thorntail/ex/logging/Logged.class
+org/thorntail/ex/logging/RequestLoggingFilter.class
+org/thorntail/ex/logging/RestApplication.class
+org/thorntail/ex/logging/ResponseLoggingFilter.class
+org/thorntail/ex/logging/HelloWorldEndpoint.class
