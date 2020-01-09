@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+	xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://www.conal.ryan.com/service/Orders/"
+	xmlns:order="http://www.conal.ryan.com/schema/Order"
+	targetNamespace="http://www.conal.ryan.com/service/Orders/"
+	name="Orders">
+
+	<wsdl:documentation>
+		This web service provides a single place for retail clients to place orders. 
+	</wsdl:documentation>
+
+	<wsdl:types>
+		<wsdl:documentation>
+			The schema is imported through the xsd:import element.
+			Best practice is to separate the wsdl and schema
+			Organizes message into re-usable structures
+			Defines the business domain language
+			Allows for versioning the schema
+		</wsdl:documentation>
+		<xsd:schema targetNamespace="http://www.conal.ryan.com/service/Orders/">
+			<xsd:import namespace="http://www.conal.ryan.com/schema/Order" schemaLocation="../xsd/Order.xsd"></xsd:import>
+		</xsd:schema>
+	</wsdl:types>
+
+	<wsdl:binding name="OrdersSOAP" type="tns:Orders">
+		<wsdl:documentation>
+			Document literal sends a full XML document as the message while RPC makes calls
+			to a remote object and provides features for handling binding and encoding. For most cases,
+			you will use document literal for your WSDL due to its flexibility.	The binding type
+			specifies that SOAP will be used as the protocol.
+		</wsdl:documentation>
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+		<wsdl:operation name="ProcessOrderPlacement">
+			<soap:operation soapAction="http://www.conal.ryan.com/service/Orders/ProcessOrderPlacement" />
+			<wsdl:input>
+				<soap:body use="literal" />
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal" />
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+
+	<wsdl:portType name="Orders">
+		<wsdl:documentation>
+			The port type of the WSDL is an element that is comparable to an interface in Java.
+			It defines the type or types of services that are available.
+			It is given a unique name (e.g. 'Orders') to identify it in the document.
+			Will create Orders.java Interface
+
+			@WebService(targetNamespace = "http://www.conal.ryan.com/service/Orders/", name = "Orders")
+			@XmlSeeAlso({com.ryan.conal.schema.order.ObjectFactory.class})
+			@SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE)
+			public interface Orders {
+
+				@WebMethod(operationName = "ProcessOrderPlacement", action = "http://www.conal.ryan.com/service/Orders/ProcessOrderPlacement")
+				@WebResult(name = "orderInquiryResponse", targetNamespace = "http://www.conal.ryan.com/schema/Order", partName = "orderInquiryResponse")
+				public com.ryan.conal.schema.order.OrderInquiryResponseType processOrderPlacement(
+					@WebParam(partName = "orderInquiry", name = "orderInquiry", targetNamespace = "http://www.conal.ryan.com/schema/Order")
+					com.ryan.conal.schema.order.OrderInquiryType orderInquiry
+				);
+			}
+
+		</wsdl:documentation>
+		<wsdl:operation name="ProcessOrderPlacement">
+			<wsdl:input message="tns:ProcessOrderPlacementRequest" />
+			<wsdl:output message="tns:ProcessOrderPlacementResponse" />
+		</wsdl:operation>
+	</wsdl:portType>
+
+	<wsdl:message name="ProcessOrderPlacementRequest">
+		<wsdl:documentation>
+			Messages correspond to the operations in the port type. Messages are given names to 
+			uniquely identify them within the enclosing port type. The value in this attribute 
+			refers to an element in the schema. 
+		</wsdl:documentation>
+		<!-- attribute element refers to an element in the schema (i.e. Order.xsd) -->
+		<wsdl:part element="order:orderInquiry" name="orderInquiry" />
+	</wsdl:message>
+
+	<wsdl:message name="ProcessOrderPlacementResponse">
+		<wsdl:documentation>
+			Messages correspond to the operations in the port type. Messages are given names to 
+			uniquely identify them within the enclosing port type. The value in this attribute 
+			refers to an element in the schema. 
+		</wsdl:documentation>
+		<wsdl:part element="order:orderInquiryResponse" name="orderInquiryResponse" />
+	</wsdl:message>
+
+	<wsdl:service name="Orders">
+		<wsdl:documentation>
+			The address path we provided will be configured as part of the jax-ws endpoint CXF definition. 
+			The service will map to an interface in Java. 
+		</wsdl:documentation>
+		<wsdl:port binding="tns:OrdersSOAP" name="OrdersSOAP">
+			<soap:address location="http://localhost:8080/apache-cxf-jax-ws-demo/services/orders" />
+		</wsdl:port>
+	</wsdl:service>
+
+</wsdl:definitions>
