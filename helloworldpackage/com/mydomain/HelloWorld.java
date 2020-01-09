@@ -1,9 +1,11 @@
+package com.mydomain;
+
 /*
  * Compile with:
  * `javac HelloWorld.java`
  *
  * Run with:
- * `java HelloWorld`
+ * `java com/mydomain/HelloWorld` 
  */
 public class HelloWorld {
 
@@ -11,5 +13,4 @@ public class HelloWorld {
         // Prints "Hello, World" to the terminal window.
         System.out.println("Hello, World");
     }
-
 }
