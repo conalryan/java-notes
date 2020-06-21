@@ -17,6 +17,6 @@ public class HelloEndpoint {
 		Client client = ClientBuilder.newClient();
 		Object response =
 				client.target("https://jsonplaceholder.typicode.com/posts").request(MediaType.APPLICATION_JSON).get(Object.class);
-		return Response.ok("yay").build();
+		return Response.ok(response).build();
 	}
 }

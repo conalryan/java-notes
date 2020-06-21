@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+  
   <groupId>org.rest.thruway</groupId>
-  <artifactId>rest-thruway</artifactId>
+  <artifactId>rest-thruway-javaee</artifactId>
   <version>1.0.0-SNAPSHOT</version>
+  
   <packaging>war</packaging>
+  
   <build>
-    <finalName>rest-thruway</finalName>
+    <finalName>rest-thruway-javaee</finalName>
   </build>
+  
   <dependencies>
     <dependency>
       <groupId>javax</groupId>
@@ -15,6 +19,7 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+  
   <dependencyManagement>
     <dependencies>
       <dependency>
@@ -25,6 +30,7 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+  
   <properties>
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <maven.compiler.source>1.8</maven.compiler.source>
