@@ -16,7 +16,7 @@
     <spring-framework.version>4.3.29.RELEASE</spring-framework.version>
     <spring-boot.version>1.5.7.RELEASE</spring-boot.version>
     <spring-data-couchbase.version>2.2.7.RELEASE</spring-data-couchbase.version>
-    <hibernate-validator.version>5.3.3.Final</hibernate-validator.version>
+    <hibernate-validator.version>6.0.23.Final</hibernate-validator.version>
     <joda-time.version>2.9.6</joda-time.version>
     <commons-lang3.version>3.0</commons-lang3.version>
     <junit.verion>4.13.1</junit.verion>
