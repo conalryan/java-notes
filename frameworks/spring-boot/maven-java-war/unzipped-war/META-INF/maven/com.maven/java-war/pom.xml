@@ -19,7 +19,7 @@
 
   <properties>
     <java.version>1.8</java.version>
-    <org.springframework.boot.version>2.1.7.RELEASE</org.springframework.boot.version>
+    <org.springframework.boot.version>2.5.12</org.springframework.boot.version>
     <maven-war-plugin.version>3.2.3</maven-war-plugin.version>
   </properties>
 
